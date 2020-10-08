@@ -1,0 +1,111 @@
+@import "reset.css";
+
+:root {
+  --bg-color: #eeeeee;
+  --main-color: #1e417f;
+  --font-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#header {
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#header img {
+  min-width: 35%;
+  max-width: 45%;
+  margin-bottom: 3%;
+}
+
+#prefectura-logo {
+  min-width: 20%;
+  max-width: 40%;
+}
+
+small {
+  font-size: 10pt;
+}
+
+#mercredi-logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content {
+  font-size: 13pt;
+  line-height: 20px;
+}
+
+#content h2 {
+  font-size: 15pt;
+  text-align: justify;
+  margin-bottom: 1%;
+}
+    
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #content {
+    font-size: 9pt;
+    line-height: 20px;
+  }
+
+  #content h2 {
+    font-size: 11pt;
+    text-align: justify;
+    margin-bottom: 1%;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #content {
+    font-size: 9pt;
+    line-height: 20px;
+  }
+
+  #content h2 {
+    font-size: 11pt;
+    text-align: justify;
+    margin-bottom: 1%;
+  }
+}
+
+.terms-conditions {
+  border: 1px solid #1e417f;
+  padding: 2pt;
+}
+
+.submit-area {
+  text-align: center;
+}
+
+#video {
+  margin: 5px 0px;
+}
+
+.btn {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
